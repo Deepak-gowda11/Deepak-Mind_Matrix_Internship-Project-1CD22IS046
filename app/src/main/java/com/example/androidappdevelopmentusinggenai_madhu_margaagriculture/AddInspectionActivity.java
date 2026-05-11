@@ -45,12 +45,39 @@ public class AddInspectionActivity extends AppCompatActivity {
         String honeyFlow = spinnerHoney.getSelectedItem().toString();
         String activityLevel = spinnerActivity.getSelectedItem().toString();
 
-        // AI Decision Matrix / Rule-based Alerts
+        // --- ENHANCED AI DECISION MATRIX ---
         StringBuilder alerts = new StringBuilder();
-        if (!queenSeen) alerts.append("Possible queen issue! ");
-        if (pestDetected) alerts.append("Inspect hive immediately for pests! ");
-        if (activityLevel.equals("Low")) alerts.append("Intervention Alert: Low activity! ");
-        if (honeyFlow.equals("Low")) alerts.append("Consider supplemental feeding. ");
+
+        // 1. Critical Health Alerts
+        if (pestDetected) {
+            alerts.append("🚨 CRITICAL: Pest detected! Treat hive with organic formic acid or check for mites immediately.\n");
+        }
+        if (!queenSeen) {
+            alerts.append("⚠️ WARNING: Queen not spotted. Check for queen cells or eggs to confirm if the colony is queenless.\n");
+        }
+
+        // 2. Production & Harvest Intelligence
+        if (honeyFlow.equals("High") && activityLevel.equals("High")) {
+            alerts.append("✨ ACTION: Honey flow is peak! Prepare harvesting equipment. Consider adding a 'Super' box.\n");
+        } else if (honeyFlow.equals("High")) {
+            alerts.append("🍯 TIP: Honey stores are full. Harvest recommended within the next 3-5 days.\n");
+        }
+
+        // 3. Colony Growth & Splitting Logic
+        if (activityLevel.equals("High") && queenSeen) {
+            alerts.append("🐝 GROWTH: Colony is highly active and crowded. Good time to SPLIT THE COLONY to prevent swarming.\n");
+        }
+
+        // 4. Survival & Feeding Tips
+        if (activityLevel.equals("Low") && honeyFlow.equals("Low")) {
+            alerts.append("📉 ALERT: Low activity and low food. Provide sugar syrup (1:1) to support colony survival.\n");
+        } else if (activityLevel.equals("Low")) {
+            alerts.append("❓ NOTE: Unusual low activity. Check for weather impact or early disease symptoms.\n");
+        }
+
+        if (alerts.length() == 0) {
+            alerts.append("✅ STATUS: Hive looks healthy and stable. Continue regular monitoring.");
+        }
 
         String alertString = alerts.toString().trim();
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());

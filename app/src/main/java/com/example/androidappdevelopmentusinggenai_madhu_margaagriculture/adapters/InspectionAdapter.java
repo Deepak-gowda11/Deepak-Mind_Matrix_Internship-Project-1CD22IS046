@@ -39,8 +39,18 @@ public class InspectionAdapter extends RecyclerView.Adapter<InspectionAdapter.In
         
         if (current.getAlert() != null && !current.getAlert().isEmpty()) {
             holder.textViewAlert.setVisibility(View.VISIBLE);
-            holder.textViewAlert.setText("Alert: " + current.getAlert());
-            holder.textViewAlert.setTextColor(Color.RED);
+            holder.textViewAlert.setText(current.getAlert());
+            
+            // Dynamic color based on severity
+            if (current.getAlert().contains("CRITICAL") || current.getAlert().contains("🚨")) {
+                holder.textViewAlert.setTextColor(Color.parseColor("#B00020")); // Deep Red
+            } else if (current.getAlert().contains("WARNING") || current.getAlert().contains("⚠️")) {
+                holder.textViewAlert.setTextColor(Color.parseColor("#E65100")); // Deep Orange
+            } else if (current.getAlert().contains("ACTION") || current.getAlert().contains("✨")) {
+                holder.textViewAlert.setTextColor(Color.parseColor("#1B5E20")); // Deep Green
+            } else {
+                holder.textViewAlert.setTextColor(Color.BLACK);
+            }
         } else {
             holder.textViewAlert.setVisibility(View.GONE);
         }
