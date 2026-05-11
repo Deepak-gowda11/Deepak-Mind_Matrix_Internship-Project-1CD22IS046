@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Hive Inspection"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxQueenSeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queen Bee Seen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Honey Flow Level"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerHoneyFlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/honey_flow_levels" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Level"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerActivityLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/activity_levels" />
+
+        <CheckBox
+            android:id="@+id/checkboxPestDetected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pest Detected" />
+
+        <Button
+            android:id="@+id/buttonSaveInspection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Save Inspection"
+            android:backgroundTint="#FFD700"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+</ScrollView>

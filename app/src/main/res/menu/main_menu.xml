@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_comparison"
+        android:title="Harvest Comparison"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_flora"
+        android:title="Flora Calendar"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_bee_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_bee_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidAppDevelopmentUsingGenAIMadhuMargaAgriculture">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AddHiveActivity"
+            android:label="Add New Hive"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InspectionListActivity"
+            android:label="Inspections"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AddInspectionActivity"
+            android:label="Add Inspection"
+            android:parentActivityName=".InspectionListActivity" />
+
+        <activity
+            android:name=".HarvestListActivity"
+            android:label="Harvest Logs"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AddHarvestActivity"
+            android:label="Add Harvest"
+            android:parentActivityName=".HarvestListActivity" />
+
+        <activity
+            android:name=".HarvestComparisonActivity"
+            android:label="Harvest Comparison"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".FloraCalendarActivity"
+            android:label="Flora Calendar"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

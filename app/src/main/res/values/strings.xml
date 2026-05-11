@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Madhu-Marga</string>
+
+    <string-array name="honey_flow_levels">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="activity_levels">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+</resources>
