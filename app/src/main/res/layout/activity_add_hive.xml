@@ -14,7 +14,7 @@
             android:id="@+id/editTextHiveId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Hive ID (e.g., Hive-001)" />
+            android:hint="@string/hint_hive_id" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -26,14 +26,14 @@
             android:id="@+id/editTextLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Location (e.g., North Garden)" />
+            android:hint="@string/hint_location" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonSaveHive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save Hive"
+        android:text="@string/btn_save_hive"
         android:backgroundTint="#FFD700"
         android:textColor="@android:color/black" />
 

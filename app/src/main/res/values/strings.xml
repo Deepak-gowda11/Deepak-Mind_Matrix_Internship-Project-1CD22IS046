@@ -12,4 +12,25 @@
         <item>Normal</item>
         <item>High</item>
     </string-array>
+
+    <string name="hint_hive_id">Hive ID (e.g., Hive-001)</string>
+    <string name="hint_location">Location (e.g., North Garden)</string>
+    <string name="btn_save_hive">Save Hive</string>
+    <string name="title_inspections">Inspections</string>
+    <string name="title_harvests">Harvest Logs</string>
+    <string name="title_comparison">Harvest Comparison</string>
+    <string name="title_flora">Flora Calendar</string>
+    <string name="btn_inspect">Inspect</string>
+    <string name="btn_harvest">Harvest</string>
+    <string name="new_inspection">New Hive Inspection</string>
+    <string name="queen_seen">Queen Bee Seen</string>
+    <string name="honey_flow">Honey Flow Level</string>
+    <string name="activity_level">Activity Level</string>
+    <string name="pest_detected">Pest Detected</string>
+    <string name="btn_save_inspection">Save Inspection</string>
+    <string name="log_harvest">Log Honey Harvest</string>
+    <string name="hint_quantity">Quantity in Kg</string>
+    <string name="btn_save_harvest">Save Harvest</string>
+    <string name="flora_title">Beekeeping Flora Calendar</string>
+    <string name="flora_content">• January: Mustard, Eucalyptus\n• February: Coriander, Sunflower\n• March-April: Neem, Citrus Fruits\n• May-June: Litchi, Karanj\n• July-August: Maize, Cucurbits\n• September-October: Multiflora, Pigeon Pea\n• November-December: Mustard, Ber</string>
 </resources>

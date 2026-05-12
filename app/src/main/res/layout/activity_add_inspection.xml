@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Hive Inspection"
+            android:text="@string/new_inspection"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
@@ -21,12 +21,12 @@
             android:id="@+id/checkboxQueenSeen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Queen Bee Seen" />
+            android:text="@string/queen_seen" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Honey Flow Level"
+            android:text="@string/honey_flow"
             android:layout_marginTop="16dp" />
 
         <Spinner
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activity Level"
+            android:text="@string/activity_level"
             android:layout_marginTop="16dp" />
 
         <Spinner
@@ -52,14 +52,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Pest Detected" />
+            android:text="@string/pest_detected" />
 
         <Button
             android:id="@+id/buttonSaveInspection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Save Inspection"
+            android:text="@string/btn_save_inspection"
             android:backgroundTint="#FFD700"
             android:textColor="@android:color/black" />
 
