@@ -19,6 +19,7 @@
     <string name="title_inspections">Inspections</string>
     <string name="title_harvests">Harvest Logs</string>
     <string name="title_comparison">Harvest Comparison</string>
+    <string name="title_distribution">Hive Productivity Distribution</string>
     <string name="title_flora">Flora Calendar</string>
     <string name="btn_inspect">Inspect</string>
     <string name="btn_harvest">Harvest</string>

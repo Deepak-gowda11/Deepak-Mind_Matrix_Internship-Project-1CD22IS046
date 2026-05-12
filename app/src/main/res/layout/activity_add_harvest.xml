@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log Honey Harvest"
+        android:text="@string/log_harvest"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
@@ -22,7 +22,7 @@
             android:id="@+id/editTextQuantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Quantity in Kg"
+            android:hint="@string/hint_quantity"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -30,7 +30,7 @@
         android:id="@+id/buttonSaveHarvest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save Harvest"
+        android:text="@string/btn_save_harvest"
         android:backgroundTint="#FFD700"
         android:textColor="@android:color/black" />
 

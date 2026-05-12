@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Beekeeping Flora Calendar"
+            android:text="@string/flora_title"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"
@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• January: Mustard, Eucalyptus\n• February: Coriander, Sunflower\n• March-April: Neem, Citrus Fruits\n• May-June: Litchi, Karanj\n• July-August: Maize, Cucurbits\n• September-October: Multiflora, Pigeon Pea\n• November-December: Mustard, Ber"
+            android:text="@string/flora_content"
             android:textSize="16sp"
             android:lineSpacingExtra="8dp"
             android:textColor="@android:color/black" />

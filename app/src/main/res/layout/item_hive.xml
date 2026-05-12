@@ -49,7 +49,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Inspect"
+                android:text="@string/btn_inspect"
                 android:textColor="#8B4513" />
 
             <Button
@@ -58,7 +58,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Harvest"
+                android:text="@string/btn_harvest"
                 android:textColor="#8B4513" />
 
         </LinearLayout>
