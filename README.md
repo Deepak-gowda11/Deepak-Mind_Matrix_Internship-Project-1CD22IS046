@@ -26,7 +26,7 @@ A built-in botanical guide that helps beekeepers plan their year based on local 
 ---
 
 ## 📸 Screenshots
-> **Note:** Add your screenshots to a folder named `screenshots` in this repo to make them appear here.
+
 
 |               Home Dashboard                |            AI Inspection Alerts             |              Harvest Analytics              |
 |:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|
@@ -34,7 +34,7 @@ A built-in botanical guide that helps beekeepers plan their year based on local 
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack 
 - **Language:** Java & Kotlin DSL
 - **UI Framework:** XML with Google Material Design
 - **Database:** Room (SQLite) for offline-first persistence
