@@ -57,5 +57,5 @@ Traditional beekeeping relies on manual memory, leading to missed signs of colon
 
 ## 👨‍💻 Developer
 Developed as part of the **Mindmatrix Internship Program**.  
-**Author:** Deepak Gowda  
+**Author:** Deepak Gowda ML  
 **Status:** Version 1.0 (Stable)
